@@ -22,9 +22,9 @@ namespace Hashing
             Console.WriteLine("enter thenumber u want to write in file");
             int num1 = int.Parse(Console.ReadLine());
 
-            int num3=(hashObj.search(num1));
-            StreamWriter sw = new StreamWriter(writingpath);
-            sw.WriteLine(num3);
+            string num3=(hashObj.search(num1)).ToString();
+
+            File.WriteAllText(writingpath,num3);
 
             string[] ReadAllLines(string Path)
             {
