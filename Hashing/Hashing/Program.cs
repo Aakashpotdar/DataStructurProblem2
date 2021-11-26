@@ -32,8 +32,5 @@ namespace Hashing
                 return data;
             }
         }
-
-        
     }
-
 }
